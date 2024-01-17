@@ -1,0 +1,135 @@
+/* On importe la police Syne */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+body * {
+    font-family: 'Syne', sans-serif;
+}
+
+.menu-logo {
+
+    width: 201px;
+    height: 19px;
+    display: flex;
+    float: left;
+    margin-top: 31px;
+    margin-left: 37px;
+
+}
+/* Header menu de navigation */
+
+
+.singular .entry-header{
+    background-color: #ffffff;
+    padding: 0rem 0;
+}
+
+.nav-links {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    column-gap: 1px;
+    margin-top: -5px;
+
+}
+
+body a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.nav-links a {
+
+    display: block;
+    width: 236px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-left: -42px;
+
+
+}
+.nav_commander {
+    font-size: 16px;
+    color:#ffffff;
+    background-color: #dc9f96; 
+}
+.nav_commander:hover{
+    background-color: #C02E44; 
+}
+
+.nav_rencontrer:hover{
+    font-size: 13px;
+}
+
+
+
+ul,
+ol {
+
+    margin: 3.8rem 0rem 0rem 0rem;
+
+}
+
+#site-footer {
+    padding-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-groupboisson {
+    position: relative;
+  }
+  
+  .footer-groupboisson img {
+    /* display: none; /* Hide the image within the div */
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /*Page acceuil */
+  
+  #bouton_commander {
+    width: 198px;
+    height: 55px;
+    border-style: none;
+    background-color: #E0B9B4;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    font-family: 'Syne', sans-serif;
+    color: white;
+    padding: 9px 57px;
+}
+#bouton_commander:hover {
+    background-color: #c02e44;
+   }
+
+   /*Header*/
+
+   #site-navigation #menu-item-20 a {
+    background-color : #DC9F96;
+    }
+    
+    #site-navigation #menu-item-20 a:hover {
+    background-color : #c02e44;
+    }
+
+    #menu-item-20 .text-wrap{
+        color: white;
+        }
+
+    #site-navigation #menu-item-21 a:hover {
+        font-size: 13px;
+    }
+
+    #menu-item-21 .text-wrap{
+        color:black;
+        }
