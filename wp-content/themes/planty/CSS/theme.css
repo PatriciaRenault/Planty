@@ -133,3 +133,31 @@ ol {
     #menu-item-21 .text-wrap{
         color:black;
         }
+
+
+        /*formulaire page 2*/
+
+    #field_hpw3x,
+    #field_tmdgv {
+        height: 71px;
+        border-radius: 7px;
+        border: unset;
+    }
+#field_vocq {
+    height: 237px;
+    border-radius: 7px;
+    border: unset;
+  }
+  #field_hpw3x_label,
+  #field_tmdgv_label,
+  #field_vocq_label {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+
+  
