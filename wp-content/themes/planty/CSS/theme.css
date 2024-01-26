@@ -5,6 +5,19 @@ body * {
     font-family: 'Syne', sans-serif;
 }
 
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+ 
+
 .menu-logo {
 
     width: 201px;
@@ -159,5 +172,140 @@ ol {
     margin-bottom: 5px;
   }
   
+  .quantite {
+    width: 70px;
+    height: 56px;
+    text-align: center;
+    border-style: none;
+    font-size: 16px;
+    line-height: 19.36px;
+    font-weight: 400;
+  }
+/*Page commande*/
+  #frmcommande{
+    margin: auto;
+}
+  #frmcommande h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+  #frmcommande{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 45px 0px;
+    width: 100%;
+}
 
-  
+#frminfos {
+    border-right: solid 2px #fff;
+}
+#frminfos, #frmlivr{
+    display: inline !important;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.wpcf7-form{
+    width: 100%;
+}
+
+#frmcommande label{
+    font-size: 20px;
+    font-weight: 400;
+    color:white;
+}
+
+#frminfos input, #frmlivr input {
+    width: 383px !important; 
+    height: 71px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.boutoncommande{
+    display: flex;
+    justify-content: center;
+}
+#btncommand{
+    width: 198px; 
+    height: 55px;
+    background-color: #E0B9B4;
+    font-size: 15px;
+   /* margin: 44px 331px;  
+    margin-left: 455px;*/
+}
+#btncommand:hover {
+    background-color: #C02E44;
+}
+.wpcf7-response-output{
+    background-color: #ffffff;
+    color: red;
+}
+.wpcf7-not-valid-tip{
+    margin-top: 5px;
+    background-color:#ffffff;
+    color:red;
+    border-color: red;
+    border: 2px solid;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+@media screen and (min-width: 634px) and (max-width: 900px){
+    
+    #frminfos, #frmlivr{
+        display: inline !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #frminfos input, #frmlivr input {
+        width: 350px !important; 
+        height: 71px;
+        background-color: #ffffff;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+    #btncommand{  
+        /*margin-left: 282px;*/
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 633px){
+    #frmcommande{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -10px;
+    }
+    #frmcommande h3{
+
+        font-size: 26px;
+
+    }
+    #frminfos, #frmlivr{
+        display: inline !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px 0px 10px 0px;
+    }
+    #frminfos input, #frmlivr input {
+        width: 300px !important; 
+        height: 71px;
+        background-color: #ffffff;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+    #frminfos {
+        border-bottom: solid 2px #fff;
+        border-right: none;
+    }
+    #btncommand{
+        width: 198px; 
+        height: 55px;
+        background-color: #E0B9B4;
+        font-size: 15px;
+       /* margin: 0px  0px 0px 60px;*/
+    }
+
+}
