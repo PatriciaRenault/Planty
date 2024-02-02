@@ -146,48 +146,65 @@
     }
 
 
-
    
 
 /********* page Nous rencontrer ************/
 
-#field_hpw3x,
-#field_tmdgv {
-    height: 71px;
-    border-radius: 7px;
-    border: unset;
-}
 
-#field_vocq {
-    height: 237px;
-    border-radius: 7px;
-    border: unset;
-}
+    #frmcontact label {
+        color: black;
+	    font-family: Syne;
+	    font-size: 20px;
+	    font-weight:400;
+        line-height: 24px;
+        margin-bottom: 20px;  
+    }
 
-#field_hpw3x_label,
-#field_tmdgv_label,
-#field_vocq_label {
-    font-family: 'Syne', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    color: black;
-    margin-bottom: 5px;
-}
-  
-.quantite {
-    width: 70px;
-    height: 56px;
-    text-align: center;
-    border-style: none;
-    font-size: 16px;
-    line-height: 19.36px;
-    font-weight: 400;
-}
+    #frmcontact input[type=email], 
+    #frmcontact input[type="text"], 
+    #frmcontact textarea{
+        background-color: #fff;
+        border-radius: 7px;
+        border: unset;
+    }
 
+    #frmcontact input[type=email], 
+    #frmcontact input[type="text"]{
+        height : 71px;
+    }
+
+    #frmcontact textarea{
+        height : 237px;
+    }   
+    #frmcontact input[type=submit]{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        width: 198px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 7px;
+        background-color:#E0B9B4;
+    }
+    #frmcontact input[type=submit]:hover{
+        background-color:#C02E44;
+    }
 
 
 /*********Page commande**********/
+  
+    .quantite {
+        width: 70px;
+        height: 56px;
+        text-align: center;
+        border-style: none;
+        font-size: 16px;
+        line-height: 19.36px;
+        font-weight: 400;
+    }
+
+
+
     #frmcommande{
         margin: auto;
     }
@@ -245,8 +262,7 @@
         height: 55px;
         background-color: #E0B9B4;
         font-size: 15px;
-   /* margin: 44px 331px;  
-    margin-left: 455px;*/
+        margin-left: 60px;
     }
 
     #btncommand:hover {
