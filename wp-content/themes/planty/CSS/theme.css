@@ -127,7 +127,7 @@
         border-radius: 0% 0% 50% 50% / 10% 10% 10% 10%;
         overflow: hidden;
     }
-  
+  /*format du bouton commander*/
     #bouton_commander {
         width: 198px;
         height: 55px;
