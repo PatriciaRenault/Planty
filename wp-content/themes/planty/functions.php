@@ -15,14 +15,15 @@ add_filter( 'wp_nav_menu_items', 'ajout_lien_admin', 10, 2 );
 function ajout_lien_admin( $items, $args ) {
     // si admin est loggé 
     if ( is_user_logged_in() ) {
-        //lien admin
+        //définition du lien admin
         $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
     
         // position du lien "Nous rencontrer" 
         $position = strpos( $items, 'Nous rencontrer' );
 
         // Met le lien "Admin" après le lien "Nous rencontrer"
-        $items = substr_replace( $items, $admin_link, $position + strlen('Nous rencontrer'), 0 );
+        $items = substr_replace( $items, $admin_link, $position 
+        + strlen('Nous rencontrer'), 0 );
     }
     return $items;
 }

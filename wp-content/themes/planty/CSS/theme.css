@@ -1,83 +1,19 @@
-/* importation de la police Syne */
+/*importation de la police Syne*/
     @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
     body * {
         font-family: 'Syne', sans-serif;
     }
 
-/*enlever les fleches des inputs*/
-/* Firefox */
-    input[type=number] {
-        -moz-appearance: textfield;
-    }
- 
-/* Chrome */
-    input::-webkit-inner-spin-button,
-    input::-webkit-outer-spin-button { 
-	    -webkit-appearance: none;
-	    margin:0;
-    }
-/***********header**************/
 
-/*logo*/
-    .menu-logo {
-        width: 201px;
-        height: 19px;
-        display: flex;
-        float: left;
-        margin-top: 31px;
-        margin-left: 37px;
-    }
+/*************************header***********************/
 
 /* menu de navigation */
 
+/* Bouton commander*/
 
-    .singular .entry-header{
-        background-color: #ffffff;
-        padding: 0rem 0;
-    }
-
-    .nav-links {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        list-style: none;
-        text-decoration: none;
-        color: #000;
-        column-gap: 1px;
-        margin-top: -5px;
-    }
-
-    body a {
-        text-decoration: none;
-        color: #000000;
-    }
-
-    .nav-links a {
-        display: block;
-        width: 236px;
-        height: 80px;
-        text-align: center;
-        line-height: 80px;
-        margin-left: -42px;     
-    }
-    .nav_commander {
-        font-size: 16px;
-        color:#ffffff;
-        background-color: #dc9f96; 
-    }
-
-    .nav_commander:hover{
-        background-color: #C02E44; 
-    }
-
-    .nav_rencontrer:hover{
-        font-size: 13px;
-    }
-
-    ul,
-    ol {
-        margin: 3.8rem 0rem 0rem 0rem;
+    #menu-item-20 .text-wrap{
+        color: white;
     }
 
     #site-navigation #menu-item-20 a {
@@ -88,9 +24,7 @@
         background-color : #c02e44;
     }
     
-    #menu-item-20 .text-wrap{
-        color: white;
-    }
+    /*bouton nous rencontrer*/
     
     #site-navigation #menu-item-21 a:hover {
         font-size: 13px;
@@ -120,14 +54,16 @@
         margin-bottom: 30px;
     }
 
-/*********Page acceuil *********/
+/*********Page accueil *********/
+
 /*ombre sur conteneur*/
     #boite_boisson{
         border-bottom: 15px solid #E3D9D0;
         border-radius: 0% 0% 50% 50% / 10% 10% 10% 10%;
         overflow: hidden;
     }
-  /*format du bouton commander*/
+
+/*format du bouton commander*/
     #bouton_commander {
         width: 198px;
         height: 55px;
@@ -140,13 +76,9 @@
         color: white;
         padding: 9px 57px;
     }
-
     #bouton_commander:hover {
         background-color: #c02e44;
-    }
-
-
-   
+    }  
 
 /********* page Nous rencontrer ************/
 
@@ -203,27 +135,25 @@
         font-weight: 400;
     }
 
+/*enlever les fleches des inputs*/
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
 
-
+    /* Chrome */
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        margin:0;
+    }
+/*Formulaire de commande*/
     #frmcommande{
         margin: auto;
-    }
-
-    #frmcommande h3{
-        color: #fff;
-        font-weight: 700;
-        font-size: 30px;
-    }
-
-    #frmcommande{
         display: flex;
         justify-content: center;
         margin: 25px 0px 45px 0px;
         width: 100%;
-    }
-
-    #frminfos {
-        border-right: solid 2px #fff;
     }
 
     #frminfos, 
@@ -231,20 +161,22 @@
         display: inline !important;
         padding-left: 35px;
         padding-right: 35px;
+    } 
+    #frminfos {
+        border-right: solid 2px #fff;
     }
-
-    .wpcf7-form{
-        width: 100%;
+ 
+    #frmcommande h3{
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
     }
-
     #frmcommande label{
         font-size: 20px;
         font-weight: 400;
         color:white;
     }
-
-    #frminfos input, 
-    #frmlivr input {
+    #frmcommande input {
         width: 383px !important; 
         height: 71px;
         background-color: #ffffff;
@@ -252,6 +184,9 @@
         margin-top: 10px;
     }
 
+
+   /*bouton commander*/
+ 
     .boutoncommande{
         display: flex;
         justify-content: center;
@@ -269,6 +204,8 @@
         background-color: #C02E44;
     }
 
+/*gestion des erreurs*/
+
     .wpcf7-response-output{
         background-color: #ffffff;
         color: red;
@@ -284,8 +221,10 @@
         padding-left: 15px;
     }
 
+/******************responsibe tablette*****************/
 @media screen and (min-width: 634px) and (max-width: 900px){
-    
+
+    /*formulaire de commande*/
     #frminfos, 
     #frmlivr{
         display: inline !important;
@@ -293,8 +232,7 @@
         padding-right: 15px;
     }
 
-    #frminfos input, 
-    #frmlivr input {
+    #frmcommand input {
         width: 350px !important; 
         height: 71px;
         background-color: #ffffff;
@@ -302,25 +240,25 @@
         margin-top: 10px;
     }
 
-    #btncommand{  
-        /*margin-left: 282px;*/
-    }
-
 }
 
+/**************responsive telephone portable *****************/
+
 @media screen and (min-width: 350px) and (max-width: 633px){
-    
+
+    /*ombre sur page d'acceuil*/
+    #boite_boisson{
+        border-bottom: 15px solid #E3D9D0;
+        border-radius: 0% 0% 50% 50% / 20% 20% 20% 20%;
+        overflow: hidden;
+    }
+    /*formulaire de commande*/
     #frmcommande{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: -10px;
     }
-
-    #frmcommande h3{
-        font-size: 26px;
-    }
-
     #frminfos, 
     #frmlivr{
         display: inline !important;
@@ -328,27 +266,27 @@
         padding-right: 10px;
         margin: 10px 0px 10px 0px;
     }
-
-    #frminfos input, 
-    #frmlivr input {
+    #frminfos {
+        border-bottom: solid 2px #fff;
+        border-right: none;
+    }
+    #frmcommande h3{
+        font-size: 26px;
+    }
+    #frmcommande input{
         width: 300px !important; 
         height: 71px;
         background-color: #ffffff;
         border-radius: 7px;
         margin-top: 10px;
     }
-
-    #frminfos {
-        border-bottom: solid 2px #fff;
-        border-right: none;
-    }
-    
     #btncommand{
         width: 198px; 
         height: 55px;
         background-color: #E0B9B4;
         font-size: 15px;
-       /* margin: 0px  0px 0px 60px;*/
-    }
+    } 
 
 }
+
+
